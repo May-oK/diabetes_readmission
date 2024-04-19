@@ -41,6 +41,7 @@ To identify key drivers of readmission among diabetic patients, we built five pr
 3. Random Forest
 4. Optimal Classification Tree
 5. XGBoost
+   
 Our dataset includes patients, each identified by a unique patient ID, with multiple inpatient visits recorded
 as separate rows. To prevent data leakage, we employed Sklearn’s GroupShuffleSplit function in our
 train/test split.
@@ -61,6 +62,12 @@ while still capturing a significant proportion of patients and data.
 
 
 ## Results
+
+Analyzing the top features across the predictive models, the number of inpatient visits, the number of
+diagnoses, and the number of emergency visits are consistently the most predictive of hospital readmission. 
+Transfers from other healthcare facilities and emergency visits also emerge as significant predictors. 
+Other influential features include the number of outpatient visits, patient age, the number of diabetes 
+medications prescribed, and the admission type—specifically, whether it is elective.
 
 In both the doubly-robust and direct method trees, the model is very conservative in modifying existing medication dosages, 
 and it reflects a commonapproach where new medications are introduced after a hospital visit, instead of adjusting existing ones. It
