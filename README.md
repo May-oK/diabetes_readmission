@@ -65,19 +65,11 @@ while still capturing a significant proportion of patients and data.
 
 Analyzing the top features across the predictive models, the number of inpatient visits, the number of
 diagnoses, and the number of emergency visits are consistently the most predictive of hospital readmission. 
-Transfers from other healthcare facilities and emergency visits also emerge as significant predictors. 
-Other influential features include the number of outpatient visits, patient age, the number of diabetes 
-medications prescribed, and the admission type—specifically, whether it is elective.
 
 In both the doubly-robust and direct method trees, the model is very conservative in modifying existing medication dosages, 
 and it reflects a commonapproach where new medications are introduced after a hospital visit, instead of adjusting existing ones. It
 also aligns with common prescription patterns, where well-established and foundational medications like
 Metformin and Insulin are usually initiated first before considering other medications.
-
-Prescription decisions initially hinge on healthcare usage, current medications,
-and age. Subsequently, admission/discharge reasons and specific diagnoses offer finer prediction details.
-In real-world application, this implies a model-based approach prioritizes broad health engagement and
-demographic factors before honing in on specific clinical information.
 
 Our predictive and prescriptive models suggest that high healthcare utilization by patients, their overall
 case complexity, and the continued management of their diabetes are all integral factors in predicting
